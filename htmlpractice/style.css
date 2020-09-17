@@ -19,6 +19,32 @@ a {
   align-items: center;
   justify-content: center;
 }
+img {
+  height: 100%
+  width100%;
+  object-fit: cover;
+}
+p{
+  color: black;
+  font-size: 1.4rem;
+  margin-top: 5px;
+  line-height: 2.5rem;
+  font-weight: 300;
+  letter-spacing: .05rem;
+}
+
+.section-title{
+  font-size: 4rem;
+  font-weight: 300;
+  color: black;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  text-align: center;
+}
+.section-title span{
+  color: crimson;
+}
   /*Hero Section*/
 #hero {
   background-image: url(https://images.unsplash.com/photo-1483104879057-379b6c2fe5a2?ixlib=rb-1.2.1&w=1000&q=80);
@@ -106,9 +132,9 @@ a {
   background-color: crimson;
 
 }
-/*end hero section*/
+/*End Hero Section*/
 
-/*begin service section*/
+/*Begin Service Section*/
 #services{
 }
 #services .services{
@@ -118,27 +144,14 @@ a {
   margin: 0 auto;
   padding: 100px 0;
 }
-#services .section-title{
-  font-size: 4rem;
-  font-weight: 300;
-  color: black;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  letter-spacing: .2rem;
-  text-align: center;
-}
-#services .service-top p{
-  font-size: 1.4rem;
-  margin-top: 5px;
-  line-height: 2.5rem;
-  font-weight: 300px;
-  letter-spacing: .05rem;
-}
+
+
 #services .service-bottom {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  margin-top: 50px;
 }
 #services .service-item {
   flex-basis: 80%;
@@ -148,12 +161,14 @@ a {
   flex-direction: column;
   padding: 30px;
   border-radius: 10px;
-  background-image: url(https://www.wallpaperflare.com/static/243/410/334/java-minimalism-blue-white-wallpaper.jpg);
+  background-image:linear-gradient(60deg, #29323c 0%, #485563 100%);
   background-size: cover;
   margin: 10px 5%;
   position: relative;
   z-index: 1;
+  overflow: hidden;
 }
+
 #services .service-item::after{
   content: "";
   position: absolute;
@@ -161,12 +176,96 @@ a {
   top: 0;
   height: 100%;
   width: 100%;
+  background-color: black;
   background-image: linear-gradient(60deg,0%,100%);
-  opacity: .5;
+  opacity: .4;
   z-index: -1;
 
 }
+
+#services .service-bottom .icon {
+  height: 80px;
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+#services .service-item h2{
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+
+}
+#services .service-item p{
+  color: white;
+  text-align: left;
+}
+
 /*end service section*/
+
+/*Projects Section*/
+#projects .projects{
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+#projects .projects-header h1{
+  margin-bottom: 50px;
+}
+
+#projects .all-projects{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+#projects .project-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+#projects .project-info{
+  padding: 30px;
+  flex-basis: 50%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  background-image:linear-gradient(60deg, #29323c 0%, #485563 100%);
+  color: white;
+}
+#projects .project-info h1{
+  font-size: 4rem;
+  font-weight: 500;
+}
+#projects .project-info h2{
+font-size: 1.8rem;
+font-weight: 500;
+margin-top: 10px;
+
+}
+
+#projects .project-info p{
+  color: white;
+}
+
+#projects .project-img{
+  flex-basis: 50%;
+  height: 300px;
+  overflow: hidden;
+}
+/*End Projects Section*/
 
 /* begin keyframes*/
 @keyframes text_reveal_box {
@@ -195,17 +294,3 @@ a {
 }
 
 /*  end Keyframes*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*End Keyframes*/
