@@ -45,6 +45,25 @@ p{
 .section-title span{
   color: crimson;
 }
+
+.cta{
+  display: inline-block;
+  padding: 10px 30px;
+  color: crimson;
+  background-color: transparent;
+  border: 2px solid crimson;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  margin-top: 30px;
+  transition: .3s ease background-color;
+  transition-property: background-color, color;
+}
+.cta:hover{
+  color:white;
+  background-color: crimson;
+
+}
   /*Hero Section*/
 #hero {
   background-image: url(https://images.unsplash.com/photo-1483104879057-379b6c2fe5a2?ixlib=rb-1.2.1&w=1000&q=80);
@@ -114,24 +133,7 @@ p{
   animation-delay: 2.5s;
 }
 
-#hero .cta{
-  display: inline-block;
-  padding: 10px 30px;
-  color: crimson;
-  background-color: transparent;
-  border: 2px solid crimson;
-  font-size: 2rem;
-  text-transform: uppercase;
-  letter-spacing: .1rem;
-  margin-top: 30px;
-  transition: .3s ease background-color;
-  transition-property: background-color, color;
-}
-#hero .cta:hover{
-  color:white;
-  background-color: crimson;
 
-}
 /*End Hero Section*/
 
 /*Begin Service Section*/
@@ -287,6 +289,55 @@ p{
   transform: scale(1.1);
 }
 /*End Projects Section*/
+#about .about{
+  flex-direction: column-reverse;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 20px;
+}
+#about .col-left {
+  width: 800px;
+  height: 800px;
+}
+#about .col-right {
+  width: 100%;
+}
+#about .col-right .section-title{
+  font-size: 6.5rem;
+}
+}
+#about .col-right {
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: .2rem;
+  margin-bottom: 10px;
+
+}
+#about .col-right p{
+  margin-bottom: 20px;
+}
+#about .col-right .cta{
+  margin-bottom: 50px;
+  padding: 10px 20px;
+  font-size: 2rem;
+}
+#about .col-left .about-img{
+  position: relative;
+}
+#about .col-left .about-img::after{
+  content: '';
+  position: absolute;
+  left: -25px;
+  top: 19px;
+  height: 975px;
+  width: 650px;
+  border: 25px solid crimson;
+  z-index: -1;
+}
+/*Begin About Section*/
+
+/*End About Section*/
 
 /* begin keyframes*/
 @keyframes text_reveal_box {
