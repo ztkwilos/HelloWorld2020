@@ -133,7 +133,6 @@ p{
   animation-delay: 2.5s;
 }
 
-
 /*End Hero Section*/
 
 /*Begin Service Section*/
@@ -294,7 +293,8 @@ p{
 #about .about{
   flex-direction: column-reverse;
   text-align: center;
-  max-width: 1200px;
+  max-height: 600px;
+  max-width: 750px;
   margin: 0 auto;
   padding: 100px 20px;
 }
@@ -328,11 +328,11 @@ p{
 #about .col-left .about-img::after{
   content: '';
   position: absolute;
-  left: -25px;
-  top: 19px;
-  height: 975px;
-  width: 650px;
-  border: 25px solid crimson;
+  left: -30px;
+  top: -50px;
+  height: 900px;
+  width: 700px;
+  border: 30px solid crimson;
   z-index: -1;
 }
 /*End About Section*/
