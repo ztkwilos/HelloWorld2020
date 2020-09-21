@@ -307,8 +307,8 @@ p{
   padding: 100px 20px;
 }
 #about .col-left {
-  width: 700px;
-  height: 800px;
+  width: 500px;
+  height: 700px;
 }
 #about .col-right {
   width: 100%;
@@ -339,8 +339,10 @@ p{
   max-width: 600px;
   margin: 0 auto;
 }
+#contact .contact .section-title{
+  padding-left: 80px;
+}
 #contact .contact h1{
-
 }
 #contact .contact-items{
   width: 400px;
@@ -388,6 +390,7 @@ p{
   flex-direction: column;
   padding-top: 50px;
   padding-bottom: 10px;
+  padding-left: 50px;
 }
 #footer h2{
   color: white;
@@ -495,7 +498,7 @@ p{
   }
   /*End Project Section*/
 
-  /*End Project Section*/
+  /* about Section*/
   #about .about{
     flex-direction: row;
   }
@@ -511,9 +514,26 @@ p{
   #about .col-right h1 {
     text-align: left;
   }
-  /*End Project Section*/
+  /*End About Section*/
+
+  /*contact section*/
+  #contact .contact{
+    flex-direction: column;
+    padding: 100px 0;
+    align-items: center;
+    justify-content: center;
+    min-width: 20vh;
+  }
+  #contact .contact-items{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 20px;
+  }
 
 
+  /*contact section*/
 }
 
 /*Media Query for Tablet*/
